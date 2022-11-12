@@ -2,7 +2,7 @@
 
 The `rtlsdr-sys` crate provides bindings over the C `librtlsdr` library.
 
-The bindings were generated with [bindgen](https://github.com/rust-lang/rust-bindgen), and then were editted by hand.
+The bindings were generated with [bindgen](https://github.com/rust-lang/rust-bindgen), and then were edited by hand.
 
 ## Dependencies
 
