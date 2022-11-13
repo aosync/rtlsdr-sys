@@ -8,6 +8,12 @@ fn main() {
 	// Build rtlsdr
 	cc::Build::new()
 		.file("rtl-sdr/src/librtlsdr.c")
+		.file("rtl-sdr/src/tuner_e4k.c")
+		.file("rtl-sdr/src/tuner_fc0012.c")
+		.file("rtl-sdr/src/tuner_fc0013.c")
+		.file("rtl-sdr/src/tuner_fc2580.c")
+		.file("rtl-sdr/src/tuner_r82xx.c")
+		.define("DETACH_KERNEL_DRIVER", None)
 		.warnings(false)
 		.include(rtlsdr_include.as_os_str())
 		.include(usb.include_paths[0].as_os_str())
